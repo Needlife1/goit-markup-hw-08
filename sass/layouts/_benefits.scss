@@ -1,6 +1,8 @@
 .benefits {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  // padding-top: 94px;
+  // padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .visually__hidden {
@@ -16,6 +18,11 @@
   margin: -1px;
 }
 
+.benefits__list {
+  display: flex;
+  gap: 30px;
+}
+
 .benefits__icon-box {
   width: 270px;
   height: 120px;
@@ -25,11 +32,6 @@
   justify-content: center;
   align-items: center;
   margin-bottom: 30px;
-}
-
-.benefits__list {
-  display: flex;
-  gap: 30px;
 }
 
 .benefits__titel {
