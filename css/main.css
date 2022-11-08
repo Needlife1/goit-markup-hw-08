@@ -451,7 +451,7 @@ a {
 }
 
 .benefits__icon-box {
-  width: 450px;
+  width: auto;
   height: 120px;
   background: var(--bg-button);
   border-radius: 4px;
@@ -637,17 +637,29 @@ a {
   padding-top: 60px;
   padding-bottom: 60px;
 }
+@media screen and (min-width: 1200px) {
+  .clients {
+    padding-bottom: 94px;
+    padding-top: 94px;
+  }
+}
 
 .clients-titel {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
   font-size: 28px;
-  line-height: 33px;
+  line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
   margin-bottom: 50px;
+}
+@media screen and (min-width: 1200px) {
+  .clients-titel {
+    font-size: 36px;
+    line-height: 1.16;
+  }
 }
 
 .clients-list {
@@ -657,7 +669,7 @@ a {
 }
 
 .clients-linc {
-  width: 170px;
+  width: 210px;
   height: 92px;
   border: 1px solid var(--border-color);
   border-radius: 4px;
@@ -666,6 +678,16 @@ a {
   justify-content: center;
   color: var(--border-color);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 768px) {
+  .clients-linc {
+    width: 226px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .clients-linc {
+    width: 170px;
+  }
 }
 .clients-linc:hover, .clients-linc:focus {
   color: var(--accent-color);

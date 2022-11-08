@@ -1,6 +1,8 @@
 .clients {
-  // padding-top: 94px;
-  // padding-bottom: 94px;
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 94px;
+    padding-top: 94px;
+  }
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -9,10 +11,12 @@
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 700;
-  // font-size: 36px;
-  // line-height: 42px;
+  @media screen and (min-width: 1200px) {
+    font-size: 36px;
+    line-height: 1.16;
+  }
   font-size: 28px;
-  line-height: 33px;
+  line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
@@ -26,8 +30,14 @@
 }
 
 .clients-linc {
-  width: 170px;
+  width: 210px;
   height: 92px;
+  @media screen and (min-width: 768px) {
+    width: 226px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 170px;
+  }
   border: 1px solid var(--border-color);
   border-radius: 4px;
   display: flex;
