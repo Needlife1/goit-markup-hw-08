@@ -31,6 +31,9 @@
 .menu {
   display: flex;
   gap: 50px;
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
 }
 
 .menu__link {
@@ -72,9 +75,18 @@
 }
 
 .contacts {
-  display: flex;
   margin-left: auto;
-  gap: 50px;
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    gap: 50px;
+  }
+}
+
+.contacts__itam {
+  margin-bottom: 10px;
 }
 
 .contacts__mail,
@@ -96,4 +108,120 @@
 .contacts__icon {
   margin-right: 10px;
   fill: currentColor;
+}
+
+.mob-heder-button {
+  margin-left: auto;
+  background-color: var(--primary-white-color);
+  border: none;
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.mob-menu-close {
+  border: none;
+  background-color: var(--primary-white-color);
+  display: block;
+  margin-left: auto;
+  padding-top: 10px;
+  padding-left: 15px;
+}
+
+.mob-menu {
+  position: fixed;
+  top: 0;
+  background-color: var(--primary-white-color);
+  //  VW и VH относиться к таблице измерения которая создает
+  // 100% ширины эерана не обращая внимание на "отца"
+  width: 100vw;
+  height: 100vh;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.mobile__menu {
+  padding-left: 40px;
+  padding-bottom: 100px;
+}
+.mobile__itam:not(:last-child) {
+  padding-bottom: 32px;
+}
+.mobile-menu__link {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color);
+}
+
+.mobile-menu__current {
+  color: var(--accent-color);
+  position: relative;
+}
+
+.mobile__contacts {
+  margin-left: 40px;
+  margin-bottom: 64px;
+}
+.mobile-contacts__tel-itam {
+  margin-bottom: 32px;
+}
+.mobile-contacts__tel {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+}
+
+.mobile-contacts__mail {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.16;
+  letter-spacing: 0.02em;
+  color: var(--text-color);
+}
+
+.mob-soc {
+  display: flex;
+  margin-left: 40px;
+  gap: 10px;
+  margin-bottom: 48px;
+}
+
+.mob-soc__network-fiorst {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.15;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+}
+
+.mob-soc__network {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.15;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+}
+
+.mob-soc__network::before {
+  content: '';
+  width: 22px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  transform: rotate(90deg);
+  margin-right: 10px;
 }

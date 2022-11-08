@@ -53,9 +53,57 @@
                         +38 096 111 11 11</a></li>
             </ul>
 
+            <button type="button" class="mob-heder-button" data-menu-open>
+                <svg class="mob-heder-button__icon" width="40" height="40">
+                    <use href="./images/symbol-defs.svg#icon-menu_mob"></use>
+                </svg></button>
         </div>
 
+        <div class="mob-menu is-hidden" data-menu>
 
+            <div class="mob-menu_box">
+                <button type="button" class="mob-menu-close" data-menu-close>
+                    <svg width="40" height="40">
+                        <use href="./images/symbol-defs.svg#icon-close-black"></use>
+                    </svg>
+                </button>
+                <ul class="mobile__menu list">
+                    <li class="mobile__itam"><a href="./index.html"
+                            class="mobile-menu__link link mobile-menu__current">Студія</a></li>
+                    <li class="mobile__itam"><a href="./portfolio.html" class="mobile-menu__link ">Портфоліо</a></li>
+                    <li class="mobile__itam"><a href="" class="mobile-menu__link ">Контакти</a></li>
+                </ul>
+
+            </div>
+
+            <div class="mobbile-box">
+                <ul class="mobile__contacts list">
+
+                    <li class="mobile-contacts__tel-itam"><a href="tel:+380961111111" class="mobile-contacts__tel link">
+                            +38 096 111 11 11</a>
+                    </li>
+
+                    <li class="mobile-contacts__itam"><a href="mailto:info@devstudio.com" class="mobile-contacts__mail">
+                            info@devstudio.com</a>
+                    </li>
+                </ul>
+
+                <ul class="mob-soc list">
+                    <li><a class="mob-soc__network-fiorst" href="">Instagram
+
+                        </a></li>
+                    <li><a class="mob-soc__network" href="">Twitter
+
+                        </a></li>
+                    <li><a class="mob-soc__network" href="">Facebook
+
+                        </a></li>
+                    <li><a class="mob-soc__network" href="">LinkedIn
+
+                        </a></li>
+                </ul>
+            </div>
+        </div>
     </header>
 
     <main>
@@ -452,65 +500,66 @@
         </div>
     </footer> -->
 
-        <!-- <div data-modal class="modal is-hidden">
-        <div class="modal__box">
-            <button data-modal-close type="button" class="modal__button">
-                <svg class="modal__close-icon" width="18" height="18">
-                    <use href="./images/symbol-defs.svg#icon-close-black"></use>
-                </svg>
-            </button>
-
-            <form name="modal__form">
-
-                <p class="modal__text">Залиште свої дані, ми вам передзвонимо</p>
-
-                <div class="form__field">
-                    <label for="name">Ім'я</label>
-                    <input class="form__input" type="text" name="name" id="name" required>
-                    <svg class="form__icon" width="18" height="18">
-                        <use href="./images/symbol-defs.svg#icon-person-black"></use>
+        <div data-modal class="modal is-hidden">
+            <div class="modal__box">
+                <button data-modal-close type="button" class="modal__button">
+                    <svg class="modal__close-icon" width="18" height="18">
+                        <use href="./images/symbol-defs.svg#icon-close-black"></use>
                     </svg>
-                </div>
+                </button>
 
-                <div class="form__field">
-                    <label for="tel">Телефон</label>
-                    <input class="form__input" type="tel" name="tel" id="tel" required>
-                    <svg class="form__icon" width="18" height="18">
-                        <use href="./images/symbol-defs.svg#icon-phone-blackp"></use>
-                    </svg>
-                </div>
+                <form name="modal__form">
 
-                <div class="form__field">
-                    <label for="email">Пошта</label>
-                    <input class="form__input" type="email" name="email" id="email" required>
-                    <svg class="form__icon" width="18" height="18">
-                        <use href="./images/symbol-defs.svg#icon-email-black"></use>
-                    </svg>
-                </div>
+                    <p class="modal__text">Залиште свої дані, ми вам передзвонимо</p>
 
-                <div class="form__textarea">
-                    <label class="form__textarea-label" for="comments">Коментар</label>
-                    <textarea class="form__backdrop-textarea" name="comments" id="comments" rows="6"
-                        placeholder="Введіть текст"></textarea>
+                    <div class="form__field">
+                        <label for="name">Ім'я</label>
+                        <input class="form__input" type="text" name="name" id="name" required>
+                        <svg class="form__icon" width="18" height="18">
+                            <use href="./images/symbol-defs.svg#icon-person-black"></use>
+                        </svg>
+                    </div>
 
-                </div>
+                    <div class="form__field">
+                        <label for="tel">Телефон</label>
+                        <input class="form__input" type="tel" name="tel" id="tel" required>
+                        <svg class="form__icon" width="18" height="18">
+                            <use href="./images/symbol-defs.svg#icon-phone-blackp"></use>
+                        </svg>
+                    </div>
 
-                <label class="form__checkbox">
-                    <input class="form__input-checbox" type="checkbox" name="agree" value="agree" required>
-                    <p class="form__checkbox-text">Погоджуюся з розсилкою та приймаю
-                        <a class="form__checkbox-link" href="">Умови договору</a>
-                    </p>
-                </label>
+                    <div class="form__field">
+                        <label for="email">Пошта</label>
+                        <input class="form__input" type="email" name="email" id="email" required>
+                        <svg class="form__icon" width="18" height="18">
+                            <use href="./images/symbol-defs.svg#icon-email-black"></use>
+                        </svg>
+                    </div>
 
-                <button class="form__backdrop-button" type="submit">Відправити</button>
+                    <div class="form__textarea">
+                        <label class="form__textarea-label" for="comments">Коментар</label>
+                        <textarea class="form__backdrop-textarea" name="comments" id="comments" rows="6"
+                            placeholder="Введіть текст"></textarea>
+
+                    </div>
+
+                    <label class="form__checkbox">
+                        <input class="form__input-checbox" type="checkbox" name="agree" value="agree" required>
+                        <p class="form__checkbox-text">Погоджуюся з розсилкою та приймаю
+                            <a class="form__checkbox-link" href="">Умови договору</a>
+                        </p>
+                    </label>
+
+                    <button class="form__backdrop-button" type="submit">Відправити</button>
 
 
 
-            </form>
+                </form>
+            </div>
         </div>
-    </div> -->
 
         <script src="./js/modal.js"></script>
+        <script src="./js/menu.js"></script>
 </body>
 
 </html>
