@@ -3,31 +3,50 @@
   padding: 60px 0;
 }
 .footer-tab {
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 1200px) {
     display: flex;
-    align-items: center;
+    align-items: baseline;
   }
 }
-// .connection__container {
-//   display: flex;
-//   align-items: baseline;
-// }
 
-// .connection {
-//   margin-right: 70px;
-// }
+.tab-box {
+  @media screen and (min-width: 768px) {
+    justify-content: space-between;
+  }
+  @media screen and (min-width: 1200px) {
+    align-items: baseline;
+    display: flex;
+  }
+}
+.connection__container {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+  }
+  @media screen and (min-width: 1200px) {
+    align-items: baseline;
+  }
+}
+
+.connection__address {
+  @media screen and (min-width: 768px) {
+    margin-left: 76px;
+    margin-right: 70px;
+  }
+}
+
+.compound__list {
+  @media screen and (min-width: 768px) {
+  }
+}
 
 .compound__list {
   display: flex;
   flex-direction: column;
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1200px) {
+    margin-bottom: 60px;
     align-items: center;
   }
-  @media screen and (min-width: 768px) {
-    margin-left: 76px;
-  }
-
-  margin-bottom: 60px;
 }
 
 .compound__item:not(:last-child) {
@@ -94,7 +113,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 60px;
+  @media screen and (max-width: 1200px) {
+    margin-bottom: 60px;
+  }
   @media screen and (min-width: 768px) {
     margin-right: 89px;
   }
@@ -150,7 +171,9 @@
   text-transform: uppercase;
   color: var(--primary-white-color);
   margin-bottom: 20px;
-  text-align: center;
+  @media screen and (max-width: 1199.9px) {
+    text-align: center;
+  }
 }
 
 .subscription {
@@ -161,16 +184,18 @@
   }
 
   @media screen and (min-width: 1200px) {
-    display: flex;
     gap: 12px;
-    align-items: center;
-    justify-content: center;
+    flex-direction: row;
+    align-items: baseline;
   }
 }
 
 .subscription__form {
   box-sizing: border-box;
-  @media screen and (min-width: 769px) {
+  @media screen and (min-width: 768px) {
+    width: 450px;
+  }
+  @media screen and (min-width: 1200px) {
     width: 358px;
   }
   max-width: 450px;

@@ -127,11 +127,6 @@ a {
   display: flex;
   gap: 50px;
 }
-@media screen and (max-width: 768px) {
-  .menu {
-    display: none;
-  }
-}
 
 .menu__link {
   padding: 32px 0;
@@ -146,7 +141,7 @@ a {
 .menu__link:hover, .menu__link:focus {
   color: var(--accent-color);
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767.9px) {
   .menu__link {
     display: none;
   }
@@ -178,7 +173,7 @@ a {
 .contacts {
   margin-left: auto;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767.9px) {
   .contacts {
     display: none;
   }
@@ -489,7 +484,7 @@ a {
   align-items: center;
   margin-bottom: 30px;
 }
-@media screen and (min-width: 768) {
+@media screen and (min-width: 768px) {
   .benefits__icon-box {
     width: 354px;
   }
@@ -508,7 +503,16 @@ a {
   text-transform: uppercase;
   margin-bottom: 10px;
   color: var(--primary-text-color);
-  text-align: center;
+}
+@media screen and (max-width: 768px) {
+  .benefits__titel {
+    text-align: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .benefits__titel {
+    text-align: center;
+  }
 }
 
 .benefits__text {
@@ -733,26 +737,52 @@ a {
   padding: 60px 0;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .footer-tab {
     display: flex;
-    align-items: center;
+    align-items: baseline;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .tab-box {
+    justify-content: space-between;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .tab-box {
+    align-items: baseline;
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .connection__container {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .connection__container {
+    align-items: baseline;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .connection__address {
+    margin-left: 76px;
+    margin-right: 70px;
   }
 }
 
 .compound__list {
   display: flex;
   flex-direction: column;
-  margin-bottom: 60px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1200px) {
   .compound__list {
+    margin-bottom: 60px;
     align-items: center;
-  }
-}
-@media screen and (min-width: 768px) {
-  .compound__list {
-    margin-left: 76px;
   }
 }
 
@@ -825,7 +855,11 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 60px;
+}
+@media screen and (max-width: 1200px) {
+  .social-networks__box {
+    margin-bottom: 60px;
+  }
 }
 @media screen and (min-width: 768px) {
   .social-networks__box {
@@ -882,7 +916,11 @@ a {
   text-transform: uppercase;
   color: var(--primary-white-color);
   margin-bottom: 20px;
-  text-align: center;
+}
+@media screen and (max-width: 1199.9px) {
+  .subscription__text {
+    text-align: center;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -894,10 +932,9 @@ a {
 }
 @media screen and (min-width: 1200px) {
   .subscription {
-    display: flex;
     gap: 12px;
-    align-items: center;
-    justify-content: center;
+    flex-direction: row;
+    align-items: baseline;
   }
 }
 
@@ -916,7 +953,12 @@ a {
   color: var(--primary-white-color);
   margin-bottom: 20px;
 }
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 768px) {
+  .subscription__form {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 1200px) {
   .subscription__form {
     width: 358px;
   }
@@ -1060,6 +1102,7 @@ a {
 
 .modal__box {
   max-width: 450px;
+  overflow: scroll;
   width: 95%;
   max-height: 609px;
   height: 95%;
