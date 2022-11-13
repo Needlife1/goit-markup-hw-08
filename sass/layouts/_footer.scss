@@ -65,6 +65,10 @@
   line-height: 1.16;
   letter-spacing: 0.03em;
   color: var(--accent-color);
+  @media screen and (max-width: 1200px) {
+    display: flex;
+    justify-content: center;
+  }
 }
 .logo {
   margin-top: 60;
