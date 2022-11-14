@@ -43,6 +43,10 @@
 }
 
 .menu {
+  @media screen and (max-width: 767.9px) {
+    display: none;
+    max-width: inherit;
+  }
   display: flex;
   gap: 50px;
 }
@@ -99,7 +103,7 @@
   }
 }
 
-.contacts__itam {
+.contacts__itam:not(:last-child) {
   margin-bottom: 10px;
 }
 

@@ -30,7 +30,6 @@
 
 .connection__address {
   @media screen and (min-width: 768px) {
-    margin-left: 76px;
     margin-right: 70px;
   }
 }
@@ -78,11 +77,13 @@
 .logo-part--white {
   color: var(--primary-white-color);
 }
-.compound-logo {
+
+.compound__address {
   @media screen and (min-width: 1200px) {
-    margin-top: 11px;
+    margin-top: 20px;
   }
 }
+
 .address {
   font-weight: 400;
   font-style: normal;

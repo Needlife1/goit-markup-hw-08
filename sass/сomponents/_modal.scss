@@ -9,10 +9,12 @@
 }
 
 .modal__box {
+  @media screen and (max-width: 768px) {
+    overflow: scroll;
+  }
   @media screen and (min-width: 1200px) {
     width: 528px;
     height: 581px;
-    overflow: scroll;
   }
   max-width: 450px;
   overflow: scroll;
