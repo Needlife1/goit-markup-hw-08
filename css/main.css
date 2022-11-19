@@ -75,6 +75,16 @@ a {
   overflow: hidden;
 }
 
+.is-hidden {
+  /*Комбинация для скрытия элементов */
+  opacity: 0;
+  /* Делает не видимым */
+  visibility: hidden;
+  /*Убирает возможность фокусирываться на элементах  */
+  pointer-events: none;
+  /* Избегает попадания случайным кликом */
+}
+
 .header {
   border-bottom: 1px solid #ececec;
 }
@@ -182,11 +192,6 @@ a {
 @media screen and (max-width: 767.9px) {
   .contacts {
     display: none;
-  }
-}
-@media screen and (max-width: 1200px) {
-  .contacts {
-    margin-left: 90px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -765,7 +770,7 @@ a {
 @media screen and (min-width: 768px) {
   .connection__container {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -773,26 +778,16 @@ a {
     align-items: baseline;
   }
 }
+@media screen and (max-width: 1200px) {
+  .connection__container {
+    margin-bottom: 60px;
+  }
+}
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .connection__address {
     margin-right: 70px;
   }
-}
-
-.compound__list {
-  display: flex;
-  flex-direction: column;
-}
-@media screen and (max-width: 1200px) {
-  .compound__list {
-    margin-bottom: 60px;
-    align-items: center;
-  }
-}
-
-.compound__item:not(:last-child) {
-  margin-bottom: 9px;
 }
 
 .connection__logo {
@@ -826,10 +821,27 @@ a {
   color: var(--primary-white-color);
 }
 
-@media screen and (min-width: 1200px) {
-  .compound__address {
-    margin-top: 20px;
+.compound__address {
+  margin-top: 20px;
+}
+
+.compound__list {
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (max-width: 767.9px) {
+  .compound__list {
+    margin-bottom: 60px;
   }
+}
+@media screen and (max-width: 1200px) {
+  .compound__list {
+    align-items: center;
+  }
+}
+
+.compound__item:not(:last-child) {
+  margin-bottom: 9px;
 }
 
 .address {
@@ -867,12 +879,7 @@ a {
   flex-direction: column;
   align-items: center;
 }
-@media screen and (max-width: 1200px) {
-  .social-networks__box {
-    margin-bottom: 60px;
-  }
-}
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .social-networks__box {
     margin-right: 89px;
   }
@@ -1009,9 +1016,18 @@ a {
 
 .main-button {
   display: flex;
-  justify-content: center;
   gap: 8px;
   margin-bottom: 50px;
+}
+@media screen and (max-width: 767px) {
+  .main-button {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 768px) {
+  .main-button {
+    justify-content: center;
+  }
 }
 
 .button {
@@ -1112,11 +1128,6 @@ a {
 }
 
 .modal__box {
-  max-width: 450px;
-  overflow: scroll;
-  width: 95%;
-  max-height: 609px;
-  height: 95%;
   background-color: var(--primary-white-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
@@ -1136,6 +1147,14 @@ a {
   .modal__box {
     width: 528px;
     height: 581px;
+  }
+}
+@media screen and (max-width: 1199.9px) {
+  .modal__box {
+    max-width: 450px;
+    width: 95%;
+    max-height: 609px;
+    height: 95%;
   }
 }
 .backdrop.is-hidden .modal__box {
@@ -1170,16 +1189,6 @@ a {
 .modal__close-icon svg:focus {
   stroke: var(--accent-color);
   fill: var(--accent-color);
-}
-
-.is-hidden {
-  /*Комбинация для скрытия элементов */
-  opacity: 0;
-  /* Делает не видимым */
-  visibility: hidden;
-  /*Убирает возможность фокусирываться на элементах  */
-  pointer-events: none;
-  /* Избегает попадания случайным кликом */
 }
 
 .modal__text {
