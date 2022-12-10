@@ -150,8 +150,6 @@
   position: fixed;
   top: 0;
   background-color: var(--primary-white-color);
-  //  VW и VH относиться к таблице измерения которая создает
-  // 100% ширины экрана не обращая внимание на "отца"
   width: 100%;
   height: 100%;
   overflow: auto;
