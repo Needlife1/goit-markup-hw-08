@@ -9,17 +9,14 @@
 }
 
 .team__titel {
-  font-weight: 700;
-  font-size: 28px;
-  line-height: 33px;
+  @include font(700, 28px, 1.17, 0.03em);
+  text-align: center;
+  color: var(--primary-text-color);
+  margin-bottom: 50px;
   @media screen and (min-width: 1200px) {
     font-size: 36px;
     line-height: 1.16;
   }
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--primary-text-color);
-  margin-bottom: 50px;
 }
 
 .cards {
@@ -46,21 +43,15 @@
 }
 
 .cards__name {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.18;
+  @include font(500, 16px, 1.18, 0.03em);
   text-align: center;
-  letter-spacing: 0.03em;
   color: var(--primary-text-color);
   margin-bottom: 10px;
 }
 
 .cards__text {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.18;
+  @include font(400, 16px, 1.18, 0.03em);
   text-align: center;
-  letter-spacing: 0.03em;
   color: var(--text-color);
 }
 

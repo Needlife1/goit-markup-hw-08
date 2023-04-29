@@ -28,8 +28,8 @@
             class="logo__part logo__part--darck">Studio</span></a>
 
         <ul class="menu list">
-          <li class="menu__itam"><a href="./index.html" class="menu__link link current">Студія</a></li>
-          <li class="menu__itam"><a href="./portfolio.html" class="menu__link ">Портфоліо</a></li>
+          <li class="menu__itam"><a href="./index.html" class="menu__link link ">Студія</a></li>
+          <li class="menu__itam"><a href="./portfolio.html" class="menu__link current">Портфоліо</a></li>
           <li class="menu__itam"><a href="" class="menu__link ">Контакти</a></li>
         </ul>
       </nav>
@@ -106,25 +106,35 @@
 
   <main>
 
-    <h1 class="visually-hidden"></h1>
 
     <section class="portfolio-section">
 
       <div class="container">
 
+        <h1 class="visually-hidden"></h1>
+
         <ul class="list main-button  ">
-          <li><button type="button" class="button">Усі</button></li>
-          <li><button type="button" class="button">Веб-сайти</button></li>
-          <li><button type="button" class="button">Додатки</button></li>
-          <li><button type="button" class="button">Дизайн</button></li>
-          <li><button type="button" class="button">Маркетинг</button></li>
+          <li><button type="button" class="portfolio-button">Усі</button></li>
+          <li><button type="button" class="portfolio-button">Веб-сайти</button></li>
+          <li><button type="button" class="portfolio-button">Додатки</button></li>
+          <li><button type="button" class="portfolio-button">Дизайн</button></li>
+          <li><button type="button" class="portfolio-button">Маркетинг</button></li>
         </ul>
 
         <ul class="list portfolio-list ">
           <li class="portfolio-item">
             <a href="" class="portfolio-link link">
               <div class="portfolio-container">
-                <img src="./images/img8..jpg" alt="Ноутбук" width="370" />
+
+                <picture>
+                  <source srcset="./images/img8..jpg 1x, ./images/portfolio1-desk-2x.jpg 2x" media="min-width: 1200px">
+                  <source srcset="./images/portfolio1-tab-1x.jpg 1x, ./images/portfolio1-tab-2x.jpg 2x"
+                    media="min-width: 768px">
+                  <source srcset="./images/portfolio1-mob-1x.jpg 1x, ./images/portfolio1-mob-2x.jpg 2x"
+                    media="max-width: 767.9px">
+                  <img src="./images/img8..jpg" alt="Ноутбук" width="450" />
+                </picture>
+
                 <p class="portfolio-top-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
                   сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
 
@@ -142,7 +152,15 @@
             <a href="" class="portfolio-link link">
 
               <div class="portfolio-container">
-                <img src="./images/img9..jpg" alt="Баскедболісти" width="370" />
+                <picture>
+                  <source srcset="./images/img9..jpg 1x, /images/portfolio2-tab-1x.jpg 2x" media="min-width: 1200px">
+                  <source srcset="./images/portfolio2-tab-1x.jpg 1x, /images/portfolio2-tab-2x.jpg 2x"
+                    media="min-width: 768px">
+                  <source srcset="./images/portfolio2-mob-1x.jpg 1x, /images/portfolio2-mob-2x.jpg 2x"
+                    media="max-width: 767.9px">
+                  <img src="./images/img9..jpg" alt="Баскедболісти" width="450" />
+                </picture>
+
                 <p class="portfolio-top-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
                   сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
 
@@ -159,7 +177,15 @@
 
             <a href="" class="portfolio-link link">
               <div class="portfolio-container">
-                <img src="./images/img10..jpg" alt="Емблема ресторану" width="370" />
+                <picture>
+                  <source srcset="./images/img10..jpg 1x, ./images/portfolio3-desk-2x.jpg 2x" media="min-width: 1200px">
+                  <source srcset="./images/portfolio3-tab-2x.jpg 2x, ./images/portfolio3-tab-2x.jpg 2x"
+                    media="min-width: 768px">
+                  <source srcset="./images/portfolio3-mob-1x.jpg 1x, ./images/portfolio3-mob-2x.jpg 2x"
+                    media="max-width: 768.9px">
+                  <img src="./images/img10..jpg" alt="Емблема ресторану" width="450" />
+                </picture>
+
                 <p class="portfolio-top-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
                   сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
               </div>
@@ -174,7 +200,15 @@
           <li class="portfolio-item">
             <a href="" class="portfolio-link link">
               <div class="portfolio-container">
-                <img src="./images/img11..jpg" alt="Навушники" width="370" />
+                <picture>
+                  <source srcset="./images/img11..jpg 1x, ./images/portfolio4-desk-2x.jpg 2x" media="min-width: 1200px">
+                  <source srcset="./images/portfolio4-tab-2x.jpg 2x, ./images/portfolio4-tab-2x.jpg 2x"
+                    media="min-width: 768px">
+                  <source srcset="./images/portfolio4-mob-1x.jpg 1x, ./images/portfolio4-mob-2x.jpg 2x"
+                    media="max-width: 768.9px">
+                  <img src="./images/img11..jpg" alt="Навушники" width="450" />
+                </picture>
+
                 <p class="portfolio-top-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
                   сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
               </div>
@@ -189,7 +223,15 @@
           <li class="portfolio-item">
             <a href="" class="portfolio-link link">
               <div class="portfolio-container">
-                <img src="./images/img12..jpg" alt="Коробки" width="370" />
+                <picture>
+                  <source srcset="./images/img12..jpg 1x, ./images/portfolio5-desk-2x.jpg 2x" media="min-width: 1200px">
+                  <source srcset="./images/portfolio5-tab-2x.jpg 2x, ./images/portfolio5-tab-2x.jpg 2x"
+                    media="min-width: 768px">
+                  <source srcset="./images/portfolio5-mob-1x.jpg 1x, ./images/portfolio5-mob-2x.jpg 2x"
+                    media="max-width: 768.9px">
+                  <img src="./images/img12..jpg" alt="Коробки" width="450" />
+                </picture>
+
                 <p class="portfolio-top-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
                   сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
               </div>
@@ -204,7 +246,15 @@
           <li class="portfolio-item">
             <a href="" class="portfolio-link link">
               <div class="portfolio-container">
-                <img src="./images/img13..jpg" alt="Монитор" width="370" />
+                <picture>
+                  <source srcset="./images/img13..jpg 1x, ./images/portfolio6-desk-2x.jpg 2x" media="min-width: 1200px">
+                  <source srcset="./images/portfolio6-tab-2x.jpg 2x, ./images/portfolio6-tab-2x.jpg 2x"
+                    media="min-width: 768px">
+                  <source srcset="./images/portfolio6-mob-1x.jpg 1x, ./images/portfolio6-mob-2x.jpg 2x"
+                    media="max-width: 768.9px">
+                  <img src="./images/img13..jpg" alt="Монитор" width="450" />
+                </picture>
+
                 <p class="portfolio-top-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
                   сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
               </div>
@@ -219,7 +269,15 @@
           <li class="portfolio-item">
             <a href="" class="portfolio-link link">
               <div class="portfolio-container">
-                <img src="./images/img14..jpg" alt="Журнал" width="370" />
+                <picture>
+                  <source srcset="./images/img14..jpg 1x, ./images/portfolio7-desk-2x.jpg 2x" media="min-width: 1200px">
+                  <source srcset="./images/portfolio7-tab-2x.jpg 2x, ./images/portfolio7-tab-2x.jpg 2x"
+                    media="min-width: 768px">
+                  <source srcset="./images/portfolio7-mob-1x.jpg 1x, ./images/portfolio7-mob-2x.jpg 2x"
+                    media="max-width: 768.9px">
+                  <img src="./images/img14..jpg" alt="Журнал" width="450" />
+                </picture>
+
                 <p class="portfolio-top-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
                   сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
               </div>
@@ -234,7 +292,15 @@
           <li class="portfolio-item">
             <a href="" class="portfolio-link link">
               <div class="portfolio-container">
-                <img src="./images/img15..jpg" alt="Лейба" width="370" />
+                <picture>
+                  <source srcset="./images/img15..jpg 1x, ./images/portfolio8-desk-2x.jpg 2x" media="min-width: 1200px">
+                  <source srcset="./images/portfolio8-tab-2x.jpg 2x, ./images/portfolio8-tab-2x.jpg 2x"
+                    media="min-width: 768px">
+                  <source srcset="./images/portfolio8-mob-1x.jpg 1x, ./images/portfolio8-mob-2x.jpg 2x"
+                    media="max-width: 768.9px">
+                  <img src="./images/img15..jpg" alt="Лейба" width="450" />
+                </picture>
+
                 <p class="portfolio-top-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
                   сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
               </div>
@@ -249,7 +315,15 @@
           <li class="portfolio-item">
             <a href="" class="portfolio-link link">
               <div class="portfolio-container">
-                <img src="./images/img16..jpg" alt="Ноутбук" width="370" />
+                <picture>
+                  <source srcset="./images/img16..jpg 1x, ./images/portfolio9-desk-2x.jpg 2x" media="min-width: 1200px">
+                  <source srcset="./images/portfolio9-tab-2x.jpg 2x, ./images/portfolio9-tab-2x.jpg 2x"
+                    media="min-width: 768px">
+                  <source srcset="./images/portfolio9-mob-1x.jpg 1x, ./images/portfolio9-mob-2x.jpg 2x"
+                    media="max-width: 768.9px">
+                  <img src="./images/img16..jpg" alt="Ноутбук" width="450" />
+                </picture>
+
                 <p class="portfolio-top-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
                   сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
               </div>

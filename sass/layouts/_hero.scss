@@ -1,8 +1,9 @@
 .hero {
   background-color: var(--hero-footer-color);
-
   padding: 118px 0;
   text-align: center;
+  max-width: 1600px;
+  height: 400px;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url(../images/hero-bg-mobail.jpg);
   background-repeat: no-repeat;
@@ -23,6 +24,7 @@
   }
   @media screen and (min-width: 1200px) {
     padding: 200px 0;
+    height: 600px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
       url(../images/hero.jpg);
     @include retina {
@@ -30,20 +32,10 @@
         url(../images/hero2x.jpg);
     }
   }
-  max-width: 1600px;
-  @media screen and (min-width: 1200px) {
-    height: 600px;
-  }
-  height: 400px;
-  margin: 0 auto;
 }
 
 .hero__titel {
-  font-weight: 900;
-  font-size: 26px;
-  line-height: 1.61;
-  text-align: center;
-  letter-spacing: 0.06em;
+  @include font(900, 26px, 1.61, 0.06em);
   text-transform: uppercase;
   color: var(--primary-white-color);
   margin-bottom: 30px;
@@ -62,15 +54,9 @@
 
 .hero__button {
   font-family: inherit;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.88;
-  align-items: center;
-  text-align: center;
-  letter-spacing: 0.06em;
+  @include font(700, 16px, 1.88, 0.06em);
   color: var(--primary-white-color);
   background-color: var(--accent-color);
-  margin: 0 auto;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   @media screen and (min-width: 1200px) {
